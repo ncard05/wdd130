@@ -1,7 +1,39 @@
+:root {
+    --primary_color:#3B8EA5 ;
+    --secondary_color:#3C3C3B ;
+    --accent-color: #D7AC77;
+    --background-color: #FFF1D7;
+    --heading-font: "Merriweather", serif;
+    --body-font: "Inconsolata", serif;
+  }
+
 html{
     max-width: 2000px;
     width: 100%; 
     background-color: var(--background-color);
+}
+
+a  {
+    text-decoration: none; 
+}
+
+.head {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns:  1fr 1fr 75%;
+    background-color: var(--accent-color);
+}
+
+.head img {
+    grid-column: 2;
+    margin: 30px;
+}
+
+.head nav {
+    grid-column: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -20,19 +52,7 @@ body {
     color: var(--secondary_color);
 }
 
-:root {
-    --primary_color:#3B8EA5 ;
-    --secondary_color:#3C3C3B ;
-    --accent-color: #D7AC77;
-    --background-color: #FFF1D7;
-    --heading-font: "Merriweather", serif;
-    --body-font: "Inconsolata", serif;
-  }
-
-a  {  
-  text-decoration: none; 
-}
-
+/* White water rafting section css */
 .hero {
     position: relative;
 }
@@ -41,27 +61,81 @@ a  {
     display: block;
     width: 100%;
     height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
 #h1{
     position: absolute;
     top:10px;
     width: 100%;
-    background-color: #00000099;
+    background-color: #25130699;
     text-align: center;
 }
 
-#art {
+.art {
     position: absolute;
-    top:100px;
-    left: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 90%;
     background-color: #ffffff99;
+}
+
+.art p {
+    margin:10px;
 }
 
 #artimg {
     float: right;
     width: 300px;
     height: auto;
+    margin: 10px;
+}
+
+/* History Section css */
+.hist {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns:  1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center; 
+}
+
+
+/* Adventure Section Section css */
+.adv {
+    margin:20px;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+h2 {   
+    grid-row: 1;
+    grid-column: 1/ 6;
+    text-align: center; 
+}
+
+.adv img {
+    grid-row: 2;
+    width: 90%;
+    height: auto;
+    margin: 5px;
+}
+
+/* footer css */
+#footer {
+    display:flex;
+    padding: 10px;
+    background-color: #D7AC77;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+#footer img {
+    width: 30px;
     margin: 10px;
 }
