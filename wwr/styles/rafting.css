@@ -163,11 +163,16 @@ h2 {
     display: grid;
     grid-template-rows: 20% 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #3B8EA520;
+    background-color: #3B8EA550;
 }
 
 .employee h2 {
-    padding: 20px;
+    background-color: #FFF1D7;
+    margin-left: 25%;
+    width: 50%;
+    padding: 10px;
+    align-self:self-start;
+
 }
 
 .employee figure {
