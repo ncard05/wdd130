@@ -209,15 +209,16 @@ legend {
   }
 
   label {
-    text-align: center;
+    text-align: left;
     padding-right: 1rem;
   }
 
-  input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
-    vertical-align: bottom;
-    justify-self: center;
+  label[for = "message"]{
+    text-align: center;
+  }
+
+  input[type="radio"] {
+    justify-self: left;
   }
 
   button {
