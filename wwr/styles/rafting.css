@@ -217,6 +217,10 @@ legend {
     text-align: center;
   }
 
+  label[for = "subscribe"]{
+    text-align: center;
+  }
+
   input[type="radio"] {
     justify-self: left;
   }
